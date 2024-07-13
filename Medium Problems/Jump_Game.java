@@ -1,15 +1,16 @@
 class Jump_Game {
     public static void main(String[] args) {
+        Jump_Game test = new Jump_Game();
         int[] nums = {2,3,1,1,4};
-        System.out.println(canJump(nums));
+        System.out.println(test.canJump(nums));
         int[] nums2 = {3,2,1,0,4};
-        System.out.println(canJump(nums2));
+        System.out.println(test.canJump(nums2));
         int[] nums3 = {2,5,0,0};
-        System.out.println(canJump(nums3));
+        System.out.println(test.canJump(nums3));
         int[] nums4 = {1};
-        System.out.println(canJump(nums4));
+        System.out.println(test.canJump(nums4));
     }
-    public static boolean canJump(int[] nums) {
+    public boolean canJump(int[] nums) {
         int curr = nums[0];
         try {
             while(nums[curr] != 0 && curr != nums.length-1) {

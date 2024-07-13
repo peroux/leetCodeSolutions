@@ -3,11 +3,12 @@ import java.util.List;
 
 public class Non_Cyclical_Number {
     public static void main(String[] args) throws Exception {
+        Non_Cyclical_Number test = new Non_Cyclical_Number();
         //isHappy(100);
-        isHappy(2);
+        test.isHappy(2);
     }
 
-    public static boolean isHappy(int n) {
+    public boolean isHappy(int n) {
         int curr = n;
         List<Integer> seen = new ArrayList<>(); //not sure if i want a HashMap or list here tbh
         while(!seen.contains(curr) && curr != 1) {
